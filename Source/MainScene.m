@@ -38,7 +38,11 @@
 
 // Scene Touch
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
-    CCLOG(@"MainScene: Screen Touched");
+    CCLOG(@"MainScene: touchBegan");
+}
+
+- (void)touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    CCLOG(@"MainScene: touchEnded");
 }
 
 @end

@@ -17,8 +17,11 @@
 
 // Scene Touch
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
-    CCLOG(@"CustomNode: You touched %@ %f,%f",self.name,self.positionInPoints.x,self.positionInPoints.y);
+    CCLOG(@"CustomNode: touchBegan %@ %f,%f",self.name,self.positionInPoints.x,self.positionInPoints.y);
 }
 
+- (void)touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+     CCLOG(@"CustomNode: touchEnded %@ %f,%f",self.name,self.positionInPoints.x,self.positionInPoints.y);
+}
 
 @end
